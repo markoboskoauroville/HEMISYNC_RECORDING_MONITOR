@@ -373,9 +373,3 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
     // No ON/OFF button: the window's X quits the app.
     func applicationShouldTerminateAfterLastWindowClosed(_ s: NSApplication) -> Bool { true }
 }
-
-let app = NSApplication.shared
-let delegate = AppDelegate()
-app.delegate = delegate
-app.setActivationPolicy(.regular)
-app.run()
